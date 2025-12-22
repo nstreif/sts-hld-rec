@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start to Scale Workbook - HLD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #2c3e50;
+            color: #2c3e50;
+            overflow: hidden;
+        }
+        
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slide {
+            width: 90%;
+            max-width: 1200px;
+            height: 85vh;
+            background: white;
+            border-radius: 4px;
+            padding: 70px 80px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+            display: none;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .slide.active {
+            display: flex;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            color: #2c3e50;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .subtitle {
+            font-size: 1.4em;
+            color: #7f8c8d;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+        
+        .content-area {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        /* Slide 1 - Title */
+        .title-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Slide 2 - Key Truths Cards */
+        .truth-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .truth-card {
+            background: #f8f9fa;
+            border-left: 4px solid #5d9cec;
+            padding: 25px 30px;
+            border-radius: 4px;
+        }
+        
+        .truth-card p {
+            font-size: 1.15em;
+            color: #2c3e50;
+            margin: 0;
+        }
+        
+        /* Slide 3 - Design Principles */
+        .principles-slide {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        .principle-item {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 3px solid #5d9cec;
+        }
+        
+        .principle-item h3 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .principle-item p {
+            color: #666;
+            font-size: 1.15em;
+        }
+        
+        /* Slide 4 - Target User */
+        .user-profile {
+            margin-top: 20px;
+        }
+        
+        .profile-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .profile-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .profile-section p {
+            color: #555;
+            font-size: 1.15em;
+        }
+        
+        /* Slide 5 - Chapter Pattern */
+        .pattern-flow {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .pattern-step {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .pattern-step h3 {
+            color: #5d9cec;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        
+        .pattern-step p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .arrow-indicator {
+            color: #5d9cec;
+            font-size: 1.5em;
+            margin: 0 10px;
+        }
+        
+        /* Slide 6 - Phase Integration */
+        .phase-list {
+            margin-top: 30px;
+        }
+        
+        .phase-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .phase-name {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 140px;
+            font-size: 1.2em;
+        }
+        
+        .phase-description {
+            color: #666;
+            font-size: 1.15em;
+        }
+        
+        /* Slide 7 - Visual Model */
+        .visual-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .phase-block {
+            background: #f0f4f8;
+            border: 2px solid #d0dae5;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        
+        .phase-block.barriers { border-left: 5px solid #e74c3c; }
+        .phase-block.people { border-left: 5px solid #3498db; }
+        .phase-block.strategy { border-left: 5px solid #2ecc71; }
+        .phase-block.execution { border-left: 5px solid #f39c12; }
+        .phase-block.cash { border-left: 5px solid #9b59b6; }
+        
+        .phase-header {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .chapter-item {
+            background: white;
+            border: 1px solid #d0dae5;
+            border-radius: 4px;
+            padding: 12px 15px;
+            font-size: 1em;
+            color: #555;
+        }
+        
+        .culminating-item {
+            background: white;
+            border: 2px solid #5d9cec;
+            border-radius: 4px;
+            padding: 12px 15px;
+            font-size: 1em;
+            color: #2c3e50;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        
+        /* Slide 8 - Deliverables Flow */
+        .flow-boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .flow-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 4px;
+            border-top: 3px solid #5d9cec;
+        }
+        
+        .flow-box h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        
+        .flow-box p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        /* Slide 9 - Artifacts Grid */
+        .artifacts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .artifact-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        
+        .artifact-section h3 {
+            color: #5d9cec;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+        
+        .artifact-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .artifact-section li {
+            padding: 8px 0;
+            color: #555;
+            font-size: 1.1em;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .artifact-section li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Slide 10 - Summary */
+        .summary-points {
+            margin-top: 40px;
+            display: grid;
+            gap: 30px;
+        }
+        
+        .summary-point {
+            padding: 25px;
+            background: #f8f9fa;
+            border-left: 4px solid #5d9cec;
+            border-radius: 4px;
+        }
+        
+        .summary-point p {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: 400;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        
+        .comparison-table th {
+            background: #f8f9fa;
+            padding: 18px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #d0dae5;
+        }
+        
+        .comparison-table th:first-child {
+            width: 50%;
+        }
+        
+        .comparison-table th:nth-child(2),
+        .comparison-table th:nth-child(3) {
+            width: 25%;
+            text-align: center;
+        }
+        
+        .comparison-table td {
+            padding: 18px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #555;
+        }
+        
+        .comparison-table td:first-child {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .comparison-table td:nth-child(2),
+        .comparison-table td:nth-child(3) {
+            text-align: center;
+            font-size: 1.8em;
+        }
+        
+        .status-good {
+            color: #27ae60;
+        }
+        
+        .status-bad {
+            color: #e74c3c;
+        }
+        
+        .status-partial {
+            color: #f39c12;
+        }
+        
+        /* Controls */
+        .controls {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        button {
+            padding: 12px 28px;
+            font-size: 1em;
+            border: none;
+            background: #5d9cec;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+        
+        button:hover {
+            background: #4a89dc;
+        }
+        
+        button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+        
+        .slide-number {
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active title-slide">
+            <h1>High-Level Design (HLD) Overview</h1>
+            <p class="subtitle">Start to Scale Workbook</p>
+        </div>
+
+        <!-- Slide 2: Key Design Truths -->
+        <div class="slide">
+            <h2>Key Design Truths</h2>
+            <div class="content-area">
+                <div class="truth-cards">
+                    <div class="truth-card">
+                        <p><strong>STS is dense</strong>—focus on highest-impact concepts per chapter.</p>
+                    </div>
+                    <div class="truth-card">
+                        <p><strong>Everything is connected</strong>—focus on one main idea at a time.</p>
+                    </div>
+                    <div class="truth-card">
+                        <p><strong>Learners want fast action</strong>—each part delivers standalone value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Core Design Principles -->
+        <div class="slide principles-slide">
+            <h2>Core Design Principles</h2>
+            <div class="content-area">
+                <div class="principle-item">
+                    <h3>Self-contained with bridges</h3>
+                    <p>Each chapter and phase is self-contained with bridges, not barriers.</p>
+                </div>
+                <div class="principle-item">
+                    <h3>Concrete deliverables</h3>
+                    <p>One concrete, shareable deliverable per chapter.</p>
+                </div>
+                <div class="principle-item">
+                    <h3>Modular design</h3>
+                    <p>Supports sequential or standalone use—flexible for different learning paths.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Target User Profile (Workbook) -->
+        <div class="slide">
+            <h2>Target User Profile</h2>
+            <div class="content-area">
+                <div class="user-profile">
+                    <div class="profile-section">
+                        <h3>Primary</h3>
+                        <p>Founder or operator scaling a company.</p>
+                    </div>
+                    <div class="profile-section">
+                        <h3>Also serves</h3>
+                        <p>Leadership teams, scale-up facilitators.</p>
+                    </div>
+                    <div class="profile-section">
+                        <h3>Not for</h3>
+                        <p>Passive readers or academic study.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Chapter Pattern -->
+        <div class="slide">
+            <h2>Chapter Pattern</h2>
+            <div class="content-area">
+                <div class="pattern-flow">
+                    <div class="pattern-step">
+                        <h3>Opening</h3>
+                        <p>Clear trigger ("Start here if...")</p>
+                    </div>
+                    <div class="pattern-step">
+                        <h3>Core</h3>
+                        <p>Plain summary + processing activities</p>
+                    </div>
+                    <div class="pattern-step">
+                        <h3>Deliverable</h3>
+                        <p>One-page artifact, reusable & shareable</p>
+                    </div>
+                    <div class="pattern-step">
+                        <h3>Bridge</h3>
+                        <p>Connects to next chapter/phase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Phase Integration -->
+        <div class="slide">
+            <h2>Phase Integration</h2>
+            <div class="content-area">
+                <div class="phase-list">
+                    <div class="phase-item">
+                        <span class="phase-name">Barriers</span>
+                        <span class="arrow-indicator">→</span>
+                        <span class="phase-description">Spot where scale is breaking</span>
+                    </div>
+                    <div class="phase-item">
+                        <span class="phase-name">People</span>
+                        <span class="arrow-indicator">→</span>
+                        <span class="phase-description">Align behavior and capacity</span>
+                    </div>
+                    <div class="phase-item">
+                        <span class="phase-name">Strategy</span>
+                        <span class="arrow-indicator">→</span>
+                        <span class="phase-description">Clarify choices and positioning</span>
+                    </div>
+                    <div class="phase-item">
+                        <span class="phase-name">Execution</span>
+                        <span class="arrow-indicator">→</span>
+                        <span class="phase-description">Turn intent into cadence</span>
+                    </div>
+                    <div class="phase-item">
+                        <span class="phase-name">Cash</span>
+                        <span class="arrow-indicator">→</span>
+                        <span class="phase-description">Ensure fuel for growth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Visual Model -->
+        <div class="slide">
+            <h2>Visual Model: Phase/Chapter Structure</h2>
+            <div class="content-area">
+                <div class="visual-container">
+                    <div class="phase-block barriers">
+                        <div class="phase-header">Phase: Barriers</div>
+                        <div class="chapter-list">
+                            <div class="chapter-item">Ch 1: Your Scaling Barrier Diagnostic</div>
+                            <div class="culminating-item">Culminating Activity: Barrier-to-Solution Map</div>
+                        </div>
+                    </div>
+                    
+                    <div class="phase-block people">
+                        <div class="phase-header">Phase: People</div>
+                        <div class="chapter-list">
+                            <div class="chapter-item">Ch 2: Right People/Right Things/Right Way Assessment</div>
+                            <div class="chapter-item">Ch 3: Your Authentic Core Values One-Pager</div>
+                            <div class="culminating-item">Culminating Activity: FACE & PACE?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="phase-block strategy">
+                        <div class="phase-header">Phase: Strategy</div>
+                        <div class="chapter-list">
+                            <div class="chapter-item">Ch 4: Your De-Hassle Action Plan</div>
+                            <div class="chapter-item">Ch 5: Your Measurable Brand Promise</div>
+                            <div class="chapter-item">Ch 6: Your One-Page Strategic Plan (OPSP)</div>
+                            <div class="culminating-item">Culminating Activity: Strategic Snapshot</div>
+                        </div>
+                    </div>
+                    
+                    <div class="phase-block execution">
+                        <div class="phase-header">Phase: Execution</div>
+                        <div class="chapter-list">
+                            <div class="chapter-item">Ch 7: Your Top 1 of 5 Focus</div>
+                            <div class="chapter-item">Ch 8: Your Quarterly Theme Campaign</div>
+                            <div class="chapter-item">Ch 9: Your Meeting Rhythm Calendar</div>
+                            <div class="culminating-item">Culminating Activity: TBD</div>
+                        </div>
+                    </div>
+                    
+                    <div class="phase-block cash">
+                        <div class="phase-header">Phase: Cash</div>
+                        <div class="chapter-list">
+                            <div class="chapter-item">Ch 10: Your Cash Acceleration Plan</div>
+                            <div class="culminating-item">Culminating Activity: Growth Scorecard</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Deliverables & Flow -->
+        <div class="slide">
+            <h2>Deliverables & Flow</h2>
+            <div class="content-area">
+                <div class="flow-boxes">
+                    <div class="flow-box">
+                        <h3>Integrated Artifacts</h3>
+                        <p>Every phase produces a single integrated artifact.</p>
+                    </div>
+                    <div class="flow-box">
+                        <h3>Flexible Entry</h3>
+                        <p>Skipped chapters? Built-in "minimum input" fallbacks—always move forward.</p>
+                    </div>
+                    <div class="flow-box">
+                        <h3>Shareable Outputs</h3>
+                        <p>Designed for review, reuse, and easy sharing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Summary -->
+        <div class="slide">
+            <h2>Summary</h2>
+            <div class="content-area">
+                <div class="summary-points">
+                    <div class="summary-point">
+                        <p>Modular, action-focused learning.</p>
+                    </div>
+                    <div class="summary-point">
+                        <p>Just-in-time impact—each phase and chapter stands on its own.</p>
+                    </div>
+                    <div class="summary-point">
+                        <p>Supports fast scaling for founders and teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Appendix -->
+        <div class="slide">
+            <h2>Appendix: Chapter 2 Comparison</h2>
+            <div class="content-area">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>Old HLD</th>
+                            <th>New HLD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Core idea clarity</td>
+                            <td class="status-good">✓</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Self-contained (bridges, not dependencies)</td>
+                            <td class="status-bad">✗</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Works for solo/small teams</td>
+                            <td class="status-partial">◐</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Clear action vs. text ratio</td>
+                            <td class="status-good">✓</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Conceptual consistency</td>
+                            <td class="status-partial">◐</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Clear deliverables</td>
+                            <td class="status-partial">◐</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Matches book structure</td>
+                            <td class="status-partial">◐</td>
+                            <td class="status-good">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-number">
+        <span id="current-slide">1</span> / <span id="total-slides">10</span>
+    </div>
+
+    <div class="controls">
+        <button id="prev-btn">← Previous</button>
+        <button id="next-btn">Next →</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const currentSlideNum = document.getElementById('current-slide');
+        const totalSlidesNum = document.getElementById('total-slides');
+
+        totalSlidesNum.textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            currentSlideNum.textContent = currentSlide + 1;
+            
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentSlide > 0) showSlide(currentSlide - 1);
+            if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) showSlide(currentSlide + 1);
+        });
+
+        showSlide(0);
+    </script>
+</body>
+</html>
