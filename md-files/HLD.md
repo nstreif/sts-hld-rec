@@ -25,10 +25,7 @@ Supports sequential or standalone use — learners can jump in where they need t
 Founder or operator scaling a company.
 
 ### Also serves
-Leadership teams, scale-up facilitators.
-
-### Not for
-Passive readers or academic study.
+Leadership teams, scale-up facilitators, solo founders.
 
 ## Chapter-Level Design Pattern
 
@@ -37,29 +34,14 @@ Every chapter follows this structure:
 ### 1. Opening
 Clear trigger ("Start here if...")
 
-### 2. Core
+### 2. Chapter Summary
 Plain summary + processing activities
 
-### 3. Deliverable
+### 3. Chapter Activity/Deliverable
 One-page artifact, reusable & shareable
 
 ### 4. Bridge
 Connects to next chapter/phase
-
-## Phase-Level Integration
-
-Each phase addresses a critical scaling dimension:
-
-- **Barriers**: Spot where scale is breaking
-- **People**: Align behavior and capacity
-- **Strategy**: Clarify choices and positioning
-- **Execution**: Turn intent into cadence
-- **Cash**: Ensure fuel for growth
-
-### Key Points
-- Each phase can stand on its own
-- Each chapter can stand on its own
-- Completing all chapters in a phase delivers maximum value
 
 ## Phase/Chapter Structure
 
@@ -98,20 +80,6 @@ Skipped chapters? Built-in "minimum input" fallbacks — always move forward.
 
 ### Shareable Outputs
 Designed for review, reuse, and easy sharing.
-
-## Comparison: Previous Work vs. New HLD
-
-| Criteria | Old HLD | New HLD |
-|----------|---------|---------|
-| Core idea clarity | ✓ | ✓ |
-| Self-contained (bridges, not dependencies) | ✗ | ✓ |
-| Works for solo/small teams | ◐ | ✓ |
-| Clear action vs. text ratio | ✓ | ✓ |
-| Conceptual consistency | ◐ | ✓ |
-| Clear deliverables | ◐ | ✓ |
-| Matches book structure | ◐ | ✓ |
-
-**Legend**: ✓ = Achieved | ✗ = Not achieved | ◐ = Partial
 
 ## Summary
 
