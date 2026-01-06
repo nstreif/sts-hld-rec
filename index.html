@@ -359,12 +359,13 @@
         }
         
         .controls {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 15px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;     /* move to left */
+    transform: none;/* remove centering transform */
+    display: flex;
+    gap: 15px;
+    /* keep horizontal layout (row) */
         }
         
         .controls button {
