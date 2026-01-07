@@ -10,27 +10,11 @@
 
 ---
 
-## TITLE SLIDE (10 seconds)
+## SLIDE 1 (10 seconds)
 
 "Start to Scale Workbook Design Framework."
 
 [Advance immediately]
-
----
-
-## SLIDE 1: DESIGN TRUTHS (90 seconds)
-
-"Three truths guide every design decision:
-
-**First**: STS is dense. We can't cover everything—we focus on highest-impact concepts only.
-
-**Second**: Everything is connected, but we present one main idea at a time. Otherwise learners get overwhelmed.
-
-**Third**: Learners want fast action. Each chapter delivers standalone value in 15-30 minutes.
-
-These truths lead directly to our design principles."
-
-[Pause 2 seconds, advance]
 
 ---
 
