@@ -66,11 +66,11 @@ Target User Profile (Workbook)
 
 ### Primary
 
-Founder or operator scaling a company (likely solo or small team).
+Founder or operator scaling a company (working through the workbook independently).
 
 ### Also serves
 
-Leadership teams, scale-up facilitators, solo founders.
+Small teams, solo founders.
 
 ### NOT
 
