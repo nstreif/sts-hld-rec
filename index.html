@@ -219,67 +219,43 @@
         .pattern-column h3 {
             color: #2c3e50;
             margin-bottom: 20px;
-            font-size: 1.2em;
-            text-align: center;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #d0dae5;
+            font-size: 1.25em;
         }
         
         .pattern-column ol {
-            list-style: none;
-            counter-reset: step-counter;
-            padding: 0;
+            padding-left: 25px;
             margin: 0;
         }
         
         .pattern-column li {
-            counter-increment: step-counter;
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-            font-size: 1em;
+            margin-bottom: 12px;
+            font-size: 1.05em;
             color: #555;
         }
         
-        .pattern-column li:before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #5d9cec;
-            color: white;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85em;
-            font-weight: 600;
-        }
-        
-        .pattern-column .step-name {
+        .step-name {
             font-weight: 600;
             color: #2c3e50;
-            display: block;
-            margin-bottom: 3px;
         }
         
-        /* Using Workbook */
+        /* Summary Points */
         .summary-points {
-            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
         }
         
         .summary-point {
             background: #f8f9fa;
-            padding: 25px 30px;
-            margin-bottom: 20px;
-            border-radius: 4px;
+            padding: 30px 35px;
             border-left: 4px solid #5d9cec;
+            border-radius: 4px;
         }
         
         .summary-point p {
-            font-size: 1.2em;
+            font-size: 1.35em;
+            line-height: 1.6;
             color: #2c3e50;
             margin: 0;
         }
@@ -290,27 +266,28 @@
         }
         
         .phase-block {
-            background: #f0f4f8;
-            border: 2px solid #d0dae5;
+            background: #f8f9fa;
             border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 15px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-left: 4px solid #5d9cec;
         }
         
         .phase-header {
+            font-size: 1.35em;
             font-weight: 600;
-            font-size: 1.3em;
             color: #2c3e50;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
         
         .chapter-list {
-            margin-left: 20px;
+            padding-left: 20px;
         }
         
         .chapter-item {
-            color: #666;
-            font-size: 1.05em;
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
             padding: 5px 0;
         }
         
@@ -318,76 +295,135 @@
             color: #5d9cec;
             font-size: 1.05em;
             font-weight: 500;
+            line-height: 1.8;
             padding: 5px 0;
             margin-top: 8px;
         }
         
         /* Next Steps */
         .next-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
             margin-top: 30px;
         }
         
         .step-card {
             background: #f8f9fa;
-            padding: 30px;
-            margin-bottom: 20px;
             border-radius: 6px;
+            padding: 30px 35px;
             border-left: 4px solid #5d9cec;
         }
         
         .step-card h3 {
             color: #2c3e50;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 1.35em;
         }
         
         .step-card p {
-            color: #666;
+            color: #555;
             font-size: 1.15em;
+            line-height: 1.6;
+            margin: 0;
         }
-        
-        /* Controls */
-        .slide-number {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 12px 20px;
+
+        /* Questions Slide */
+        .questions-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .questions-slide h1 {
+            font-size: 4em;
+            color: #5d9cec;
+            margin-bottom: 30px;
+        }
+
+        .questions-slide p {
+            font-size: 1.5em;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+
+        /* Decision Points Slide */
+        .decision-highlight {
+            background: #e8f4f8;
+            border-left: 4px solid #5d9cec;
+            padding: 30px 40px;
+            margin-bottom: 35px;
             border-radius: 4px;
-            font-size: 1.1em;
+        }
+
+        .decision-highlight h3 {
             color: #2c3e50;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .decision-highlight p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .recommendation {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 25px 35px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .recommendation p {
+            color: #856404;
+            font-size: 1.15em;
+            font-weight: 500;
+            margin: 0;
         }
         
+        /* Controls & Slide Number */
         .controls {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;     /* move to left */
-    transform: none;/* remove centering transform */
-    display: flex;
-    gap: 15px;
-    /* keep horizontal layout (row) */
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 100;
         }
         
-        .controls button {
+        button {
             background: white;
             border: 2px solid #5d9cec;
             color: #5d9cec;
             padding: 12px 30px;
-            font-size: 1em;
+            font-size: 1.1em;
             border-radius: 4px;
             cursor: pointer;
-            transition: all 0.2s;
             font-weight: 500;
+            transition: all 0.2s ease;
         }
         
-        .controls button:hover:not(:disabled) {
+        button:hover:not(:disabled) {
             background: #5d9cec;
             color: white;
         }
         
-        .controls button:disabled {
+        button:disabled {
             opacity: 0.3;
             cursor: not-allowed;
+        }
+        
+        .slide-number {
+            position: fixed;
+            top: 30px;
+            right: 40px;
+            font-size: 1.1em;
+            color: white;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -396,7 +432,7 @@
         <!-- Slide 1: Title -->
         <div class="slide active title-slide">
             <h1>Start to Scale Workbook</h1>
-            <p class="subtitle">Design Framework</p>
+            <p class="subtitle">Design Framework Review</p>
         </div>
 
         <!-- Slide 2: Core Design Principles -->
@@ -406,15 +442,19 @@
                 <div class="principle-cards">
                     <div class="principle-card">
                         <h3>Self-contained with bridges</h3>
-                        <p>Each chapter stands alone. No dependencies that block progress—only bridges to relevant chapters.</p>
+                        <p>Each chapter and phase stands alone with bridges to other relevant phases, not dependencies that block progress.</p>
                     </div>
                     <div class="principle-card">
                         <h3>Concrete deliverables</h3>
-                        <p>One tangible, shareable artifact per chapter and phase. Users leave with something they can use immediately.</p>
+                        <p>One concrete, shareable deliverable per chapter and phase.</p>
                     </div>
                     <div class="principle-card">
                         <h3>Modular design</h3>
-                        <p>Supports sequential reading or jumping to specific chapters. Users work where they need to.</p>
+                        <p>Supports sequential or standalone use—learners can jump in where they need to.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>Targeted work over comprehensive work</h3>
+                        <p>Users complete 15-30 minutes of focused work, not 60 minutes of exhaustive processing.</p>
                     </div>
                 </div>
             </div>
@@ -427,8 +467,7 @@
                 <div class="user-profile">
                     <div class="profile-section">
                         <h3>Primary</h3>
-                        <p>Founder or operator actively scaling a company.</p>
-                        <p><em>Assume they are reading the book and completing the workbook independently.</em></p>
+                        <p>Founder or operator scaling a company (working through the workbook independently).</p>
                     </div>
                     <div class="profile-section">
                         <h3>Also serves</h3>
@@ -460,7 +499,13 @@
             </div>
         </div>
 
-        <!-- Slide 5: Phase Overview -->
+        <!-- Slide 5: Questions? -->
+        <div class="slide questions-slide">
+            <h1>Questions?</h1>
+            <p>Let's pause here before reviewing the phase overview</p>
+        </div>
+
+        <!-- Slide 6: Phase Overview -->
         <div class="slide">
             <h2>Phase Overview</h2>
             <div class="content-area">
@@ -513,7 +558,7 @@
             </div>
         </div>
 
-        <!-- Slide 6: The Architecture -->
+        <!-- Slide 7: The Architecture -->
         <div class="slide">
             <h2>The Architecture: Three Chapter Types</h2>
             <div class="content-area">
@@ -540,7 +585,7 @@
             </div>
         </div>
 
-        <!-- Slide 7: Chapter Patterns by Type -->
+        <!-- Slide 8: Chapter Patterns by Type -->
         <div class="slide">
             <h2>Chapter Patterns by Type</h2>
             <div class="content-area">
@@ -582,7 +627,7 @@
             </div>
         </div>
 
-        <!-- Slide 8: Next Steps -->
+        <!-- Slide 9: Next Steps -->
         <div class="slide">
             <h2>Next Steps</h2>
             <div class="content-area">
@@ -602,10 +647,29 @@
                 </div>
             </div>
         </div>
+
+        <!-- Slide 10: Decision Points -->
+        <div class="slide">
+            <h2>Decision Points for This Meeting</h2>
+            <div class="content-area">
+                <div class="decision-highlight">
+                    <h3>1. Design Framework Approval</h3>
+                    <p>Binary yes/no: Can we move forward with this design framework for the workbook?</p>
+                </div>
+                
+                <div class="decision-highlight">
+                    <h3>2. Review Cycle Preference</h3>
+                    <p>If yes to the framework, what's your preferred review cycle as we develop the content?</p>
+                    <div class="recommendation">
+                        <p><strong>Recommendation:</strong> Send one phase at a time as completed. This limits review burden while allowing iterative feedback throughout development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="slide-number">
-        <span id="current-slide">1</span> / <span id="total-slides">8</span>
+        <span id="current-slide">1</span> / <span id="total-slides">10</span>
     </div>
 
     <div class="controls">
