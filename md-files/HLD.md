@@ -174,7 +174,7 @@ Clear trigger ("Start here if...")
 
 #### 2\. Concept Summary
 
-Plain explanation of the framework/tool being built
+Plain explanation of 3-4 key concepts (no fluff, just what's needed to complete the work)
 
 #### 3\. Template/Worksheet
 
@@ -195,9 +195,9 @@ See "Phase Transition Logic" section below for patterns
 
 Clear trigger ("Start here if...")
 
-#### 2\. Framework Explanation
+#### 2\. Concept Summary
 
-The model/method with real examples
+Plain explanation of 3-4 key concepts (no fluff, just real examples and what's needed to complete the work)
 
 #### 3\. Application Exercise
 
