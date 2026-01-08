@@ -326,26 +326,26 @@ NOTE: Activities and archetypes listed here are a first draft---they can be chan
 
 -   Ch 2: Right People/Right Things/Right Way Assessment (Diagnostic)
 -   Ch 3: Your Authentic Core Values One-Pager (Template)
--   **Culminating Activity**: FACE & PACE? (TBD)
+-   **Culminating Activity**: Integrated FACe + PACe
 
 ### Phase: Strategy
 
 -   Ch 4: Your De-Hassle Action Plan (Framework Application)
 -   Ch 5: Your Measurable Brand Promise (Framework Application)
 -   Ch 6: Your One-Page Strategic Plan (OPSP) (Template)
--   **Culminating Activity**: Strategic Snapshot (Brand Promise + OPSP + De-hassle priorities integrated)
+-   **Culminating Activity**: Vision Summary
 
 ### Phase: Execution
 
 -   Ch 7: Your Top 1 of 5 Focus (Framework Application)
 -   Ch 8: Your Quarterly Theme Campaign (Template)
 -   Ch 9: Your Meeting Rhythm Calendar (Template)
--   **Culminating Activity**: TBD
+-   **Culminating Activity**: Rockefeller Habits Checklist
 
 ### Phase: Cash
 
 -   Ch 10: Your Cash Acceleration Plan (Diagnostic)
--   **Culminating Activity**: Growth Scorecard (Critical Number + CCC + Key metrics dashboard)
+-   **Culminating Activity**: Power of One + CASh
 
 Deliverables & Flow
 -------------------
