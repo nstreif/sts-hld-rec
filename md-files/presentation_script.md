@@ -1,270 +1,327 @@
 # Presentation Script: Start to Scale Workbook Design Framework
+## [UPDATED - Control-Focused Version]
 
-**Total Time: 15-20 minutes (including Q&A)**
+**Total Time: 20-25 minutes (including discussion)**
+**Approach: Direct, efficient, decision-driven**
 
 ---
 
 ## PRE-MEETING FRAME (30 seconds)
 
-"Thanks for taking the time to meet. I want to walk you through the design framework we've developed for the Start to Scale workbook and get your feedback. My goal is a clear yes or no on this approach so we know whether to proceed. The presentation is about 12 minutes, leaving time for discussion."
+"Thanks for your time today. I'm going to walk you through our design framework for the Start to Scale workbook, then demonstrate Chapter 2 as a working example. At the end, I need two specific decisions from you, which I'll make explicit. The whole presentation is about 15 minutes, then we'll discuss and decide. Let's get started."
+
+**[Start slides immediately]**
 
 ---
 
-## SLIDE 1: TITLE (10 seconds)
+## SLIDE 1: TITLE (5 seconds)
 
-**Start to Scale Workbook - Design Framework**
+**[Read, advance immediately]**
 
-**[Pause briefly]**
-
-"Let me walk you through how we're structuring this."
+"Start to Scale Workbook - Design Framework Review."
 
 ---
 
-## SLIDE 2: CORE DESIGN PRINCIPLES (2 minutes)
-
-**[Point to the four principles on screen]**
-
-"We've organized the entire workbook around four core design principles."
-
-**Self-contained with bridges:**
-"First: each chapter and phase is self-contained with bridges to other relevant phases, not dependencies that block progress. Users should be able to jump to the chapter they need without being forced through everything before it."
-
-**One concrete deliverable:**
-"Second: one concrete, shareable deliverable per chapter and phase. Every time someone completes a chapter, they walk away with an actual tool or artifact they can use."
-
-**Modular design:**
-"Third: modular design that supports sequential or standalone use. Users can work through the workbook front to back, or they can jump to Chapter 6 because that's where they're stuck right now."
-
-**Targeted work over comprehensive work:**
-"Fourth: users complete 15 to 30 minutes of focused work, not 60 minutes of exhaustive processing. We use triage and conditional sections to guide users to what matters most for their situation."
-
-**Transition:**
-"These principles directly shape who this is for..."
-
----
-
-## SLIDE 3: TARGET USER PROFILE (1 minute)
-
-**Primary:**
-"Our primary user is a founder or operator scaling a company—likely solo or with a small team."
-
-**Also serves:**
-"This also serves leadership teams and solo founders who need to work through the material on their own."
-
-**Not for:**
-"Importantly, this is not designed for passive readers or academic audiences. That clarity lets us stay focused on practical, action-oriented exercises."
-
-**Transition:**
-"So how does this actually work for users?"
-
----
-
-## SLIDE 4: USING THE WORKBOOK (45 seconds)
-
-**[Read the three statements clearly]**
-
-"Each phase can stand on its own."
-
-**[Pause]**
-
-"Each chapter can stand on its own."  
-
-**[Pause]**
-
-"Completing all chapters in a phase delivers maximum value."
-
-**Clarify:**
-"So users can engage at the phase level, the chapter level, or work through entire phases for the full benefit. All three approaches are designed to work."
-
-**Transition:**
-"Here's what that structure looks like..."
-
----
-
-## SLIDE 5: PHASE OVERVIEW (1.5 minutes)
-
-**[Point to screen]**
-
-"Ten chapters organized into five phases, following the Scaling Up methodology."
-
-**Walk through quickly:**
-
-"Phase one: Barriers. Chapter 1 diagnostic, with a Barrier-to-Solution Map as the culminating activity."
-
-"Phase two: People. Chapters 2 and 3, culminating in an integrated FACe and PACe deliverable."
-
-"Phase three: Strategy. Chapters 4, 5, and 6, culminating in a Vision Summary."
-
-"Phase four: Execution. Chapters 7, 8, and 9, culminating in the Rockefeller Habits Checklist."
-
-"Phase five: Cash. Chapter 10, culminating in Power of One plus CASh."
-
-**Key point:**
-"Each phase ends with a culminating activity that integrates the chapter work into a single artifact."
-
-**Transition:**
-"Now here's the core design innovation..."
-
----
-
-## SLIDE 6: THE ARCHITECTURE - THREE CHAPTER TYPES (2 minutes)
+## SLIDE 2: CORE DESIGN PRINCIPLES (90 seconds)
 
 **[Point to the three cards]**
 
-"Not all chapters should work the same way, so we've created three chapter archetypes."
+"Three core principles guide everything we've built."
 
-**Diagnostic:**
-"Diagnostic chapters are for identifying what's broken or where to focus. Examples: Chapter 1 on Barriers, Chapter 2 on Right People/Right Things, Chapter 10 on Cash."
+**Self-contained with bridges:**
+"Each chapter stands alone. No dependencies that block someone from jumping to Chapter 6 if that's where they need to start."
 
-**Template:**
-"Template chapters are for creating a specific artifact or plan. Examples: Chapter 3 for Core Values, Chapter 6 for the OPSP, Chapter 8 for Quarterly Theme."
+**Concrete deliverables:**
+"Every chapter produces a tangible tool or artifact. Not insights—actual deliverables they can use."
 
-**Framework:**
-"Framework chapters are for applying a methodology to your current situation. Examples: Chapter 4 on De-Hassle, Chapter 5 on Brand Promise, Chapter 7 on Top 1 of 5."
+**Modular design:**
+"Users can go sequential or jump around. Both paths work."
 
-**The key:**
-"By matching the chapter structure to what that content needs to accomplish, we make each chapter as efficient and effective as possible."
-
-**Transition:**
-"Let me show you what each of these patterns looks like..."
+**[Advance immediately—don't wait for questions]**
 
 ---
 
-## SLIDE 7: CHAPTER PATTERNS BY TYPE (2.5 minutes)
+## SLIDE 3: TARGET USER PROFILE (45 seconds)
 
-**[Point to the yellow callout box]**
+**Primary:**
+"Primary user: founder or operator working through this independently."
 
-"All chapters share the same bookends: Opening and Bridge. But the middle differs based on the archetype."
+**Also serves:**
+"Also works for leadership teams, solo founders, people working with STS Coaches."
 
-**Diagnostic:**
-**[Point to left column]**
+**Not for:**
+"Not designed for passive readers or academic use."
 
-"Diagnostic chapters follow this pattern: Opening, then a concept summary covering 3 to 4 key concepts. Then a universal assessment—a quick triage exercise that everyone completes. That includes an explicit filter that directs users to complete only the sections relevant to their situation."
-
-"Next are conditional deep dives—modular sections that users complete selectively based on their assessment. Each deep dive is self-contained and takes 5 to 10 minutes max."
-
-"Then an action plan that synthesizes only what the user completed in their deep dives. And finally, contextual bridges to the next relevant chapter or phase."
-
-**Template:**
-**[Point to middle column]**
-
-"Template chapters are simpler: Opening, concept summary explaining the framework, then the template or worksheet with step-by-step completion and examples. Then the bridge."
-
-**Framework:**
-**[Point to right column]**
-
-"Framework chapters: Opening, then framework explanation with real examples, then an application exercise where users apply it to their situation. Then an output or next action section explaining what to do with the completed work. Then the bridge."
-
-**Key insight:**
-"Each pattern is optimized for a different job. Diagnostics triage and target. Templates build artifacts. Frameworks teach and apply."
-
-**Transition:**
-"So what happens next?"
+**[Advance immediately]**
 
 ---
 
-## SLIDE 8: NEXT STEPS (1 minute)
+## SLIDE 4: USING THE WORKBOOK (30 seconds)
+
+**[Read the three statements]**
+
+"Each phase stands alone. Each chapter stands alone. Completing all chapters in a phase delivers maximum value."
+
+**Brief clarification:**
+"Users engage at whatever level they need—phase, chapter, or full workbook."
+
+**[Advance immediately]**
+
+---
+
+## SLIDE 5: QUESTIONS? (1 minute)
+
+**[Pause here deliberately]**
+
+"Before I show you the specific chapters and phases, let me pause. Any questions on the foundation—the principles, the target user, or how this gets used?"
+
+**[Field questions briefly]**
+- Keep answers tight
+- If question is about details: "Let me show you that in the phase overview"
+- If no questions: "Great. Let me show you what we're building."
+
+**[Advance when ready]**
+
+---
+
+## SLIDE 6: PHASE OVERVIEW (90 seconds)
+
+**[Point to screen]**
+
+"Ten chapters across five phases. Here's what we're building."
+
+**Walk through quickly:**
+"Phase 1: Barriers—one diagnostic chapter, Barrier-to-Solution Map deliverable."
+
+"Phase 2: People—two chapters including Chapter 2 that I'll demo. Integrated FACe and PACe as the culminating deliverable."
+
+"Phase 3: Strategy—three chapters covering De-Hassle, Brand Promise, OPSP. Vision Summary as culminating deliverable."
+
+"Phase 4: Execution—three chapters on focus, themes, meeting rhythms. Rockefeller Habits Checklist."
+
+"Phase 5: Cash—one chapter, Power of One plus CASh deliverable."
+
+**Key point:**
+"Notice: each phase produces one integrated artifact at the end."
+
+**Transition:**
+"That's what we're building. Now let me show you how it actually works."
+
+**[Advance—or switch to Chapter 2 document]**
+
+---
+
+## CHAPTER 2 DEMONSTRATION (5 minutes)
+
+**[Open Chapter 2 if not already visible]**
+
+**Setup (15 seconds):**
+"Chapter 2 is the Right People/Right Things/Right Way Assessment. This demonstrates our diagnostic archetype. Let me show you the flow."
+
+**Part 1: The Triage (60 seconds)**
+**[Scroll to Section 1]**
+
+"Every user starts here: Six-Circle Quick Assessment. Rate six areas 1 to 5. Takes about 5 minutes."
+
+**[Point to the filter instruction]**
+
+"Then—this is the key design element—they identify their two lowest scores and complete only the deep dives relevant to those scores. Explicit permission to skip what doesn't apply."
+
+**Part 2: Conditional Deep Dives (90 seconds)**
+**[Scroll to Section 2]**
+
+"Section 2 has seven deep dive modules. Users complete only what's relevant."
+
+**[Point to Deep Dive A]**
+
+"Each starts with a clear IF condition: 'Complete this if Employees scored 1-3.'"
+
+**[Show the pattern quickly]**
+
+"If Employees and Sell are their lowest scores, they complete those two deep dives—about 15 minutes total. They skip the other five."
+
+**Emphasize:**
+"This is the efficiency: targeted work based on the assessment, not forcing everyone through everything."
+
+**Part 3: Action Plan (45 seconds)**
+**[Scroll to Section 3]**
+
+"Action plan synthesizes only what they completed in their deep dives. Not re-processing everything—just focusing their priorities based on what they worked on."
+
+**Part 4: Bridge (30 seconds)**
+**[Scroll to Section 4]**
+
+"Every chapter ends with a bridge: clear paths forward based on what the chapter revealed. Three options, not seven. Plus a default if they're unsure."
+
+**Wrap (15 seconds):**
+"That's the diagnostic archetype in action: triage, targeted deep dives, action plan, bridge."
+
+**[Return to slides or pause]**
+
+---
+
+## SLIDE 7: NEXT STEPS (45 seconds)
+
+**[Advance to this slide]**
+
+"So next steps if we move forward:"
 
 **Review Chapter 2:**
-"We've built Chapter 2—the Right People/Right Things/Right Way Assessment—as a full example of the diagnostic archetype. I'm seeking a binary yes or no on this design approach."
+"You've now seen Chapter 2 as the diagnostic example. I need a binary yes or no on this approach."
 
-**With Approval:**
-"If this framework works, we'll begin executing all chapters and phases using this design framework. Each chapter follows its appropriate archetype pattern."
+**With approval:**
+"We execute all 10 chapters plus 5 culminating activities using this framework."
 
 **Deliverables:**
-"Ten chapters plus five phase-culminating activities."
+"Ten standalone chapters, five phase integrations."
 
-**Close:**
-"That's the framework. What questions do you have?"
-
-**[Pause and wait for questions]**
+**[Advance immediately]**
 
 ---
 
-## Q&A PREPARATION
+## SLIDE 8: DECISION POINTS (2 minutes)
 
-### Likely Questions & Responses:
+**[Point to Decision 1]**
 
-**Q: "How is this different from other workbooks?"**
-A: "The conditional design. In diagnostic chapters, users only complete the deep dives relevant to their situation. Someone with solid people practices can skip those sections entirely. And each chapter is designed around a specific archetype—diagnostic, template, or framework—so the structure matches what that content needs to accomplish."
+"Here are the two decisions I need from you today."
 
-**Q: "Will solo founders be able to use this?"**
-A: "Yes, every exercise includes adaptation notes for solo founders versus small teams. We've designed with that primary user in mind from the start."
+**Decision 1: Framework Approval**
+"First: Can we move forward with this design framework? Binary yes or no. If there are concerns, tell me specifically what needs to change."
 
-**Q: "What if someone skips chapters?"**
-A: "That's the point of self-contained design. Each chapter has what it needs to stand alone. The bridges at the end suggest where to go next, but nothing is blocked by skipping earlier chapters."
+**[Pause—wait for response]**
 
-**Q: "How do you handle the density of Scaling Up concepts?"**
-A: "Through triage in the diagnostic chapters. Instead of forcing users through all six concepts, we help them assess and identify their two weakest areas, then they only complete deep dives in those areas. Targeted work over comprehensive work."
+**Decision 2: Review Cycle**
+"Second: If yes, what's your preferred review process?"
 
-**Q: "What about the bridges between chapters?"**
-A: "Each chapter ends with contextual bridges that suggest next steps based on what the chapter work revealed. They're suggestions, not requirements. Users can follow them or chart their own path."
+**[Point to the recommendation box]**
 
-**Q: "How long until this is done?"**
-A: "With framework approval, we can [provide realistic timeline based on your capacity and resources]."
+"Our recommendation: we send you one complete phase at a time. This limits your review burden while giving you iterative feedback opportunities throughout development."
 
-**Q: "Can you show me an example?"**
-A: "Yes, Chapter 2 is complete and demonstrates the diagnostic archetype. I can walk you through it now or send it for your review."
+**[Pause—wait for response]**
+
+**Clarify logistics:**
+"Does that work? Or would you prefer a different review cadence?"
 
 ---
 
-## HANDLING SPECIFIC SCENARIOS
+## DISCUSSION & ALIGNMENT (5-10 minutes)
 
-### If they ask to see Chapter 2 immediately:
-"Absolutely. Chapter 2 is the Right People/Right Things/Right Way Assessment. It starts with a quick universal assessment where users rate six areas, then based on their lowest scores, they complete only the relevant deep dives. I can pull it up now if you'd like."
+**After getting the two decisions, cover alignment points:**
 
-### If they express concern about complexity:
-"That's exactly why we use the triage approach in diagnostic chapters. If a founder's people practices are solid, they skip those deep dives. The workbook adapts to what each user needs, rather than forcing everyone through everything."
+**On persona:**
+"One clarification: we've designed this assuming independent use as the primary path—founder at their laptop. Each activity includes adaptations for working with a coach or team. Does that primary-independent approach work for you?"
 
-### If they ask about time commitment:
-"Each chapter is designed for 15 to 30 minutes of work. Diagnostic chapters can be even faster if you score well on the assessment—you only complete what's relevant. Template and framework chapters walk you through building one artifact, which keeps the scope focused."
+**On growth tools:**
+"Second: we're integrating your existing growth tools—FACe, PACe, OPSP—throughout. Not creating new frameworks, just adapting what already works for the workbook format. Thoughts?"
 
-### If they want to see the full chapter list:
-**[Reference Slide 5]**
-"The phase overview shows all ten chapters. Would it be helpful to walk through any specific phase in more detail?"
-
-### If they ask about your confidence in this approach:
-"We built this framework specifically for the Start to Scale context—dense material that needs to be actionable for busy founders. The archetype approach lets us match structure to purpose, and the conditional design respects that not every founder needs to work on every concept."
+**Field any remaining questions:**
+- Keep answers direct
+- If question requires detail: "Let me pull up the appendix" **[go to Slides 9-10 if needed]**
+- If question is out of scope: "That's a great question for later—right now I need to confirm whether this framework works"
 
 ---
 
-## CLOSING OPTIONS
+## CLOSE (1 minute)
 
-**If they approve:**
-"Great, thank you. I'll move forward with executing the remaining chapters using this framework. I'll circle back with updates as we complete each phase."
+**Recap what was decided:**
 
-**If they have concerns:**
-"I understand. What specifically would you want to see changed or clarified before we proceed?"
+"So to confirm: **[repeat the decisions]**"
 
-**If they're unsure:**
-"Would it help to review Chapter 2 together? That might make the framework more concrete and help you decide if this approach will work."
+"Review process: **[repeat what was agreed]**"
 
-**If they want time to think:**
-"Of course. I can send you Chapter 2 for review and we can reconvene after you've had a chance to look at it."
+"Timeline: We'll deliver **[first phase/deliverable]** by **[date]**."
+
+**Final check:**
+"Anything else we need to address before we start executing?"
+
+**Thank and end:**
+"Great. Thank you for the feedback. We'll get started and send you **[next deliverable]** by **[date]**."
 
 ---
 
-## TONE GUIDANCE
+## APPENDIX SLIDES (USE ONLY IF NEEDED)
 
-- **Confident, not defensive**: You've done the work; present it clearly
-- **Efficient with time**: Don't linger on slides unnecessarily  
-- **Open to feedback**: This is a proposal, not a mandate
-- **Action-oriented**: End with clear next steps
+**Slides 9-10 are there if:**
+- Someone asks: "Can you explain the three chapter types in more detail?"
+- Someone asks: "How does the diagnostic pattern differ from template or framework?"
+- You need to prove a specific design choice
 
-## PACING NOTES
+**Don't proactively present these unless asked.**
 
-- **Slides 1, 4**: Quick transitions—don't linger
-- **Slide 2**: Foundation—take your time
-- **Slides 6-7**: Core innovation—slow down and be clear
-- **Slide 5**: Context only—keep moving
-- **Slide 8**: Clear ask—be direct
+---
 
-## KEY PHRASES TO EMPHASIZE
+## CONTROL TACTICS
 
-These phrases carry the most weight—deliver them clearly:
+### 1. Own the Pace
+- Don't ask permission to advance slides
+- Advance when you're done talking, not when they might have questions
+- Use Slide 5 as your only deliberate pause point
 
-1. "Self-contained with bridges, not dependencies that block progress"
-2. "One concrete, shareable deliverable per chapter and phase"  
-3. "15 to 30 minutes of focused work, not 60 minutes of exhaustive processing"
-4. "All chapters share the same bookends: Opening and Bridge"
-5. "I'm seeking a binary yes or no on this design approach"
+### 2. Redirect Efficiently
+- If question is about detail you'll cover: "I'll show you that in just a moment"
+- If question derails: "That's important—let me finish this thought first, then we'll come back to it"
+- If discussion wanders: "Let me bring us back to the decision we need: does this framework work?"
+
+### 3. Make Direct Asks
+- Slide 8 is your anchor: "I need two decisions from you"
+- Don't hint. Don't ask "what do you think?" Ask "Can we move forward?"
+- Wait for clear answers—silence is okay
+
+### 4. Use Your Mentor Strategically
+- Before your direct asks: They can add context or credibility
+- During Q&A: They can handle questions about strategic fit or broader context
+- When you make the ask: You lead, they support
+
+### 5. Time-Box Discussions
+- If a question takes >2 minutes: "This is a good discussion—can we note this and come back to it after we get the framework decision?"
+- If someone goes deep on Chapter 2 content: "I appreciate the engagement with the content—right now I need to know if the structure works"
+
+---
+
+## IF THINGS GO OFF TRACK
+
+### If they want to review every chapter detail:
+"I appreciate the thorough review, but right now I need a decision on the framework itself. If the framework works, we can discuss chapter-level details as we build them."
+
+### If they're non-committal:
+"I understand you may need time, but to keep this project moving, I need to know: what specifically would you need to see or know to make a yes/no decision?"
+
+### If the answer is no:
+"Okay. Can you tell me specifically what doesn't work? Is it the archetype approach, the time commitment, the deliverable format, something else?"
+
+### If they keep asking for more examples:
+"Chapter 2 is our proof point for diagnostics. Would it help if we built one Template and one Framework chapter as comparisons, then reconvene? Or do you need something else?"
+
+---
+
+## SUCCESS CHECKLIST
+
+Walking out with:
+- ✅ Clear YES or NO on framework
+- ✅ Agreement on what we're building (10 chapters + 5 culminating activities)  
+- ✅ Defined review process
+- ✅ Timeline for next deliverable
+- ✅ No ambiguity about scope or expectations
+
+---
+
+## KEY PHRASES TO USE
+
+1. **"I need two decisions from you today"** - Sets expectation for outcome
+2. **"Binary yes or no"** - No room for vagueness
+3. **"If there are concerns, tell me specifically what needs to change"** - Forces clarity
+4. **"Let me bring us back to the decision"** - Redirects when discussions wander
+5. **"To keep this project moving..."** - Creates urgency for decision
+
+---
+
+## MINDSET
+
+**You are not asking for permission. You are presenting a solution and getting a decision.**
+
+- Confident, not apologetic
+- Direct, not tentative  
+- Decision-focused, not consensus-seeking
+- Time-conscious, not rambling
+
+**Your job: Present clearly → Demonstrate effectively → Get clear decisions → Execute**
