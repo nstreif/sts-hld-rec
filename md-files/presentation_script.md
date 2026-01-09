@@ -20,6 +20,8 @@
 
 "Start to Scale Workbook - Design Framework Review."
 
+"I want to get through 3 slides first then pause for questions. are we okay if I go straight through these 3, and save questions for a few min from now"
+
 ---
 
 ## SLIDE 2: CORE DESIGN PRINCIPLES (90 seconds)
