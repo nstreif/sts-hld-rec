@@ -430,7 +430,7 @@
 <body>
     <div class="slide-container">
         <!-- Slide 1: Title -->
-        <div class="slide active title-slide">
+        <div class="slide title-slide">
             <h1>Start to Scale Workbook</h1>
             <p class="subtitle">Design Framework Review</p>
         </div>
@@ -451,6 +451,7 @@
                     <div class="principle-card">
                         <h3>Modular design</h3>
                         <p>Supports sequential reading or jumping to specific chapters. Users work where they need to.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -686,11 +687,15 @@
         totalSlidesNum.textContent = totalSlides;
 
         function showSlide(n) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (n + totalSlides) % totalSlides;
+            // Remove active from all slides first
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            // Set current slide
+            currentSlide = Math.max(0, Math.min(n, totalSlides - 1));
             slides[currentSlide].classList.add('active');
             currentSlideNum.textContent = currentSlide + 1;
             
+            // Update button states
             prevBtn.disabled = currentSlide === 0;
             nextBtn.disabled = currentSlide === totalSlides - 1;
         }
@@ -703,6 +708,7 @@
             if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) showSlide(currentSlide + 1);
         });
 
+        // Initialize - make sure we start at slide 0
         showSlide(0);
     </script>
 </body>
