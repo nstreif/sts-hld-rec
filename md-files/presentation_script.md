@@ -1,5 +1,4 @@
 # Presentation Script: Start to Scale Workbook Design Framework
-## [UPDATED - Control-Focused Version]
 
 **Total Time: 20-25 minutes (including discussion)**
 **Approach: Direct, efficient, decision-driven**
