@@ -15,11 +15,11 @@ Core Design Principles
 
 ### Self-contained with bridges
 
-Each chapter and phase is self-contained with bridges to other relevant phases, not dependencies that block progress.
+Each chapter is self-contained with bridges to other relevant chapters and decisions, not dependencies that block progress.
 
 ### Concrete deliverables
 
-One concrete, shareable deliverable per chapter and phase.
+One concrete, shareable deliverable per chapter and decision.
 
 ### Modular design
 
@@ -57,9 +57,13 @@ If a chapter has 6+ concepts or decision points:
 
 ### Time Budget Per Chapter
 
+**NOTE: Time estimates are internal design constraints only. Do not include time estimates in user-facing content.**
+
 -   Universal sections: 5-10 minutes
 -   Conditional deep dives: 5-10 minutes each
--   Total chapter time: 15-30 minutes (not 45-60)
+-   Total chapter time: 20-40 minutes (not 50-60)
+
+These targets guide chapter design to keep work focused and prevent bloat, but users should experience the work as naturally bounded rather than explicitly timed.
 
 Target User Profile (Workbook)
 ------------------------------
@@ -93,9 +97,9 @@ Different chapters serve different functions. Use the appropriate archetype:
 -   Clear filter/decision point (e.g., "your two lowest scores")
 -   Conditional deep dives (complete only what's relevant)
 -   Action plan based on paths taken
--   Phase transition bridge (2-3 options max)
+-   Transition bridge (2-3 options max)
 
-**Time**: 5-10 min assessment + 1-2 deep dives (5-10 min each) = 15-30 min total
+**Time** (internal design target, not shown to users): 5-10 min assessment + 1-2 deep dives (5-10 min each) = 15-30 min total
 
 ### 2\. Template/Planning Chapters
 
@@ -108,9 +112,9 @@ Different chapters serve different functions. Use the appropriate archetype:
 -   Brief concept primer
 -   Step-by-step template completion
 -   One cohesive deliverable
--   Phase transition bridge (2-3 options max)
+-   Transition bridge (2-3 options max)
 
-**Time**: 20-30 min to complete template
+**Time** (internal design target, not shown to users): 20-30 min to complete template
 
 ### 3\. Framework Application Chapters
 
@@ -123,9 +127,9 @@ Different chapters serve different functions. Use the appropriate archetype:
 -   Framework explanation with examples
 -   Application worksheet/exercise
 -   Concrete next action or deliverable
--   Phase transition bridge (2-3 options max)
+-   Transition bridge (2-3 options max)
 
-**Time**: 15-25 min to apply framework
+**Time** (internal design target, not shown to users): 15-25 min to apply framework
 
 Chapter-Level Design Pattern
 ----------------------------
@@ -161,10 +165,10 @@ Synthesizes only what user completed in deep dives\
 No re-processing of universal assessment\
 Format: Clear owner + specific action + timeframe
 
-#### 6\. Phase Transition Bridge
+#### 6\. Transition Bridge
 
-Simple decision tree (2-3 options) guiding to most relevant next phase\
-See "Phase Transition Logic" section below for patterns
+Simple decision tree (2-3 options) guiding to most relevant next chapter or decision\
+See "Transition Logic" section below for patterns
 
 ### For Template/Planning Chapters:
 
@@ -184,10 +188,10 @@ Step-by-step completion with:
 -   Examples where helpful
 -   Adaptation notes for solo vs. team use
 
-#### 4\. Phase Transition Bridge
+#### 4\. Transition Bridge
 
-Simple decision tree (2-3 options) guiding to most relevant next phase\
-See "Phase Transition Logic" section below for patterns
+Simple decision tree (2-3 options) guiding to most relevant next chapter or decision\
+See "Transition Logic" section below for patterns
 
 ### For Framework Application Chapters:
 
@@ -207,15 +211,15 @@ Guided worksheet to apply framework to user's situation
 
 What to do with the completed work
 
-#### 5\. Phase Transition Bridge
+#### 5\. Transition Bridge
 
-Simple decision tree (2-3 options) guiding to most relevant next phase\
-See "Phase Transition Logic" section below for patterns
+Simple decision tree (2-3 options) guiding to most relevant next chapter or decision\
+See "Transition Logic" section below for patterns
 
-Phase Transition Logic
+Transition Logic
 ----------------------
 
-Each chapter ends with a clean bridge guiding users to the most relevant next phase. Avoid overwhelming users with 5-7 conditional paths. Instead, offer 2-3 clear options based on what the chapter revealed.
+Each chapter ends with a clean bridge guiding users to the most relevant next step. Avoid overwhelming users with 5-7 conditional paths. Instead, offer 2-3 clear options based on what the chapter revealed.
 
 ### Standard Bridge Structure:
 
@@ -225,7 +229,7 @@ Each chapter ends with a clean bridge guiding users to the most relevant next ph
 
 [Brief context sentence based on chapter work]
 
-### Stay in [Current Phase] if:
+### Stay in [Current Decision/Barriers] if:
 - [Condition 1 that suggests staying]
 - [Condition 2 that suggests staying]
 - [Condition 3 that suggests staying]
@@ -234,12 +238,12 @@ Each chapter ends with a clean bridge guiding users to the most relevant next ph
 
 ---
 
-### Jump to [Most Common Next Phase] if:
+### Jump to [Most Common Next Decision] if:
 - [Condition 1 for jumping]
 - [Condition 2 for jumping]
 - [Condition 3 for jumping]
 
-→ Skip ahead: Chapter X-Y ([Phase Name])
+→ Skip ahead: Chapter X-Y ([Decision Name])
 
 ---
 
@@ -247,40 +251,40 @@ Each chapter ends with a clean bridge guiding users to the most relevant next ph
 
 ---
 
-### If you're still unsure which phase to tackle next:
-[Default guidance, usually stay in current phase]
+### If you're still unsure:
+[Default guidance, usually stay in current decision]
 
 → [Specific recommendation]
 ```
 
-### Common Phase Transitions:
+### Common Transitions:
 
-**From Barriers Phase:**
-- Most commonly → People Phase (fix foundational issues first)
-- Sometimes → Strategy or Execution (if people are solid)
+**From Barriers:**
+- Most commonly → Decision 1: People (fix foundational issues first)
+- Sometimes → Decision 2: Strategy or Decision 3: Execution (if people are solid)
 
-**From People Phase:**
-- Most commonly → Strategy Phase (once team is right, give them direction)
-- Sometimes → Execution Phase (if strategy exists but execution is broken)
+**From Decision 1: People:**
+- Most commonly → Decision 2: Strategy (once team is right, give them direction)
+- Sometimes → Decision 3: Execution (if strategy exists but execution is broken)
 
-**From Strategy Phase:**
-- Most commonly → Execution Phase (turn plans into action)
-- Sometimes → People Phase (if strategy reveals people gaps)
+**From Decision 2: Strategy:**
+- Most commonly → Decision 3: Execution (turn plans into action)
+- Sometimes → Decision 1: People (if strategy reveals people gaps)
 
-**From Execution Phase:**
-- Most commonly → Cash Phase (measure what matters)
-- Sometimes → Strategy Phase (if execution reveals strategic gaps)
+**From Decision 3: Execution:**
+- Most commonly → Decision 4: Cash (measure what matters)
+- Sometimes → Decision 2: Strategy (if execution reveals strategic gaps)
 
-**From Cash Phase:**
-- Typically cycles back to other phases based on what metrics reveal
+**From Decision 4: Cash:**
+- Typically cycles back to other decisions based on what metrics reveal
 
 ### Bridge Design Rules:
 
-1. **Limit to 2-3 options max** — more creates decision paralysis
-2. **Phase-level guidance** — point to phases, not individual chapters (exception: natural next chapter in current phase)
-3. **Clear conditions** — each option explains WHEN to choose it
-4. **Include a default** — "if unsure, do this"
-5. **No exhaustive lists** — avoid "if X see Ch 3, if Y see Ch 7, if Z see Ch 10..."
+1. **Limit to 2-3 options max** – more creates decision paralysis
+2. **Decision-level guidance** – point to decisions, not individual chapters (exception: natural next chapter in current decision)
+3. **Clear conditions** – each option explains WHEN to choose it
+4. **Include a default** – "if unsure, do this"
+5. **No exhaustive lists** – avoid "if X see Ch 3, if Y see Ch 7, if Z see Ch 10..."
 
 Conditional Design Language
 ---------------------------
@@ -304,45 +308,36 @@ Format: "Complete this [section] if [condition]"
 ✅ "Fill out this section only if you have a team of 3+"\
 ✅ "Skip to Section 4 if both circles scored 4-5"
 
-### Time Signals
-
-Help users estimate effort based on their path:
-
-✅ "This quick assessment takes 5 minutes. Based on your results, you'll complete 1-2 deep dives (5-10 min each)."\
-✅ "If all six areas scored 4-5, you're done! Skip to Section 4."
-
-❌ "This diagnostic will take 45-60 minutes" (when it could be 20)
-
-Phase/Chapter Structure
+Chapter Structure
 -----------------------
 NOTE: Activities and archetypes listed here are a first draft---they can be changed.
 
-### Phase: Barriers
+### Barriers
 
 -   Ch 1: Your Scaling Barrier Diagnostic (Diagnostic)
--   **Culminating Activity**: Barrier-to-Solution Map (Your #1 barrier + which phase(s) address it)
+-   **Culminating Activity**: Barrier-to-Solution Map (Your #1 barrier + which decision(s) address it)
 
-### Phase: People
+### Decision 1: People
 
 -   Ch 2: Right People/Right Things/Right Way Assessment (Diagnostic)
 -   Ch 3: Your Authentic Core Values One-Pager (Template)
 -   **Culminating Activity**: Integrated FACe + PACe
 
-### Phase: Strategy
+### Decision 2: Strategy
 
 -   Ch 4: Your De-Hassle Action Plan (Framework Application)
 -   Ch 5: Your Measurable Brand Promise (Framework Application)
 -   Ch 6: Your One-Page Strategic Plan (OPSP) (Template)
 -   **Culminating Activity**: Vision Summary
 
-### Phase: Execution
+### Decision 3: Execution
 
 -   Ch 7: Your Top 1 of 5 Focus (Framework Application)
 -   Ch 8: Your Quarterly Theme Campaign (Template)
 -   Ch 9: Your Meeting Rhythm Calendar (Template)
 -   **Culminating Activity**: Rockefeller Habits Checklist
 
-### Phase: Cash
+### Decision 4: Cash
 
 -   Ch 10: Your Cash Acceleration Plan (Diagnostic)
 -   **Culminating Activity**: Power of One + CASh
@@ -352,7 +347,7 @@ Deliverables & Flow
 
 ### Integrated Artifacts
 
-Every phase produces a single integrated artifact.\
+Each decision produces a single integrated artifact.\
 **Every chapter produces a working tool or decision**, which may be:
 
 -   Single-page template (Template chapters)
@@ -416,11 +411,11 @@ Include adaptation notes:
 -   "Working solo? Try..."
 -   "With a team? Consider..."
 
-### Time Estimates
+### Time Estimates (Internal Design Constraint)
 
--   Keep realistic (15-30 min per chapter)
--   Signal time per section for diagnostic chapters
--   Be honest about effort required
+-   Keep realistic (15-30 min per chapter) when designing
+-   Do not include time estimates in user-facing content
+-   Design chapters to feel naturally focused, not artificially timed
 
 ### Minimum Viable Versions
 
@@ -452,7 +447,7 @@ What to Avoid
 ### Overwhelming Bridge Options
 
 -   **Bad**: Listing 5-7 conditional chapter-to-chapter paths ("If X see Ch 3, if Y see Ch 7, if Z see Ch 10...")
--   **Good**: 2-3 phase-level options with clear decision criteria
+-   **Good**: 2-3 decision-level options with clear decision criteria
 
 ### Over-Formatting
 
@@ -489,7 +484,7 @@ Summary
 
 -   **Modular, action-focused learning** --- Chapters use appropriate archetype (Diagnostic, Template, or Framework)
 -   **Conditional engagement** --- Diagnostic chapters use triage to guide users to targeted deep dives
--   **Just-in-time impact** --- Each phase and chapter stands on its own
--   **Time-bounded work** --- 15-30 minutes per chapter, not 45-60
--   **Phase-focused bridges** --- Simple 2-3 option decision trees guide users to next phase, avoiding connection overload
+-   **Just-in-time impact** --- Each chapter stands on its own
+-   **Time-bounded by design** --- Chapters designed for 15-30 minutes of focused work (internal constraint, not shown to users)
+-   **Decision-focused bridges** --- Simple 2-3 option decision trees guide users to next decision, avoiding connection overload
 -   **Supports fast scaling** --- Built for founders and teams who need results now
