@@ -385,14 +385,6 @@ Writing Style
 -   Chunk content for scannability
 -   Use first-person ("your") to make it personal
 
-### Formatting
-
--   Avoid over-formatting (excessive bold, bullets, headers)
--   Use minimum formatting appropriate for clarity
--   Lists and bullets only when structure requires it (rankings, multi-step processes)
--   Prose for reports, documents, explanations
--   CommonMark standard markdown for any formatting used
-
 ### Tone
 
 -   Direct and actionable
